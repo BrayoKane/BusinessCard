@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.businesscard.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:text="Pepino's"
+        android:textColor="#D80000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_toRightOf="@id/textView"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="6dp"
+        android:paddingTop="7dp"
+        android:text="Pizza"
+        android:textColor="#397D02"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textView2"
+        android:fontFamily="cursive"
+        android:paddingLeft="6dp"
+        android:paddingTop="7dp"
+        android:text="Restaurant"
+        android:textColor="#397D02"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/pizzaImg"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza" />
+
+    <ImageView
+        android:id="@+id/build"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizzaImg"
+        android:padding="10dp"
+        android:src="@drawable/ic_location_pin_4" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizzaImg"
+        android:layout_toRightOf="@id/build"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingLeft="0dp"
+        android:text="Located along Kimathi Street Opposite Corner House, Next to Old Mutual Building."
+        android:textColor="#397D02"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/build"
+        android:padding="10dp"
+        android:src="@drawable/ic_telephone_1" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_toRightOf="@id/phone"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingLeft="0dp"
+        android:text="Delivery Contact: 0728 261 875 Tel: 0795 055 589/ 0789 574 049"
+        android:textColor="#397D02"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:padding="10dp"
+        android:src="@drawable/ic_hourglass" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_toRightOf="@id/time"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingLeft="0dp"
+        android:text="Open daily from 08:00 AM - 11:00 PM"
+        android:textColor="#397D02"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:padding="10dp"
+        android:src="@drawable/ic_building_6" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/address"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingLeft="0dp"
+        android:text="P.O Box 63991 - 00619 Nairobi"
+        android:textColor="#397D02"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_mail" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text6"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/mail"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:paddingLeft="0dp"
+        android:text="info@pepinospizza.co.ke"
+        android:textColor="#397D02"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_like"
+            android:drawableRight="@drawable/ic_like"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:text="Buy one, get one FREE everyday!!"
+            android:textColor="#D80000"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_smiley_wink"
+            android:drawableRight="@drawable/ic_smiley_wink"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="You Can't buy Happiness, But you can buy Pizza!"
+            android:textColor="#397D02"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
